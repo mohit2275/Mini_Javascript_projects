@@ -25,7 +25,7 @@ let addToDo = (item) => {
             this.classList.toggle('done')
         }
     )
-    
+
     listItem.querySelector('i').addEventListener(
         "click",
         function () {
