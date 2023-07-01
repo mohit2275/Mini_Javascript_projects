@@ -18,7 +18,6 @@ prev.addEventListener('click', function () {
 next.addEventListener('click', function () {
     if (count == slides.length - 1) {
         count = 0;
-        // slides[0].style.transition = '0s'
         slideImage();
     }
     else {
@@ -35,6 +34,5 @@ slides.forEach((slide, index) => {
 let slideImage = () => {
     slides.forEach((slide) => {
         slide.style.transform = `translateX(-${count * 100}%)`
-        slides[slides.length - 1].style.transition = '0s'
     });
 }
