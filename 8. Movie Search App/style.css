@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-color: #747d8c;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+#myInput {
+    width: 70%;
+    padding: 10px 15px;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px black;
+    border: none;
+    margin: 10px;
+    border-radius: 17px;
+}
+
+#btn {
+    width: fit-content;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+#bigBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.smallBox {
+    width: 20%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px white;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#pic {
+    height: 100%;
+}
+
+.overlay {
+    background-color: rgb(250, 228, 228);
+    position: absolute;
+    padding: 10px;
+    height: 220px;
+    box-shadow: 0px 0px 10px black;
+    overflow: auto;
+    bottom: -220px;
+
+}
+
+.overlay h3 {
+    color: #ff7979;
+    border-bottom: 2px rgb(61, 51, 51) solid;
+}
+
+.overlay p {
+    font-size: 15px;
+    color: rgb(39, 32, 32);
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.smallBox:hover .overlay {
+    transition: .5s;
+    bottom: 0px;
+}

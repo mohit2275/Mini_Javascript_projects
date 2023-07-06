@@ -8,11 +8,10 @@ fetch(url)
         console.log(data);
 
         data.forEach(element => {
-            product.innerHTML += `  <div id="one">
+            product.innerHTML += `<div id="one">
             <h2>${element.title}</h2>
             <img src="${element.image}" alt="">
             <p>${element.price}</p>
         </div>`
         });
     })
-
