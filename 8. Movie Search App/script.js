@@ -13,6 +13,8 @@ let bigBox = document.getElementById('bigBox');
 fetch(APIURL)
     .then(first => first.json())
     .then((data) => {
+        console.log(data);
+        console.log(data.results);
         data.results.forEach(element => {
 
             bigBox.innerHTML += `
