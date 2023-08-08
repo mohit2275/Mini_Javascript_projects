@@ -23,8 +23,7 @@ fetch(APIURL)
                 <div class="overlay">
                     <div class="title">
                         <h2>${element.title}</h2>
-                        <h4>${element.vote_average
-                }</h4>
+                        <h4>${element.vote_average}</h4>
                     </div>
                     <h3>Overview</h3>
                     <p>

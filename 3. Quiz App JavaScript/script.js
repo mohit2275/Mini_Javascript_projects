@@ -8,8 +8,8 @@ let questions = [{
 },
 {
     'que': 'Who is the Prime Minister of India ?',
-    'a': 'Kejriwal',
-    'b': 'Pappu',
+    'a': 'Arvind Kejriwal',
+    'b': 'Rahul Gandhi',
     'c': 'Narendra Modi',
     'd': 'Rajnath Singh',
     'correct': 'c'

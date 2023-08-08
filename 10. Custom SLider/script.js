@@ -20,7 +20,7 @@ next.addEventListener('click', function () {
         count = 0;
         slideImage();
     }
-    else {
+    else {  
         count++;
         slideImage()
     }
