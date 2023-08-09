@@ -1,38 +1,74 @@
-let slides = document.querySelectorAll(".slide")
+let sec = document.querySelectorAll('.sections');
 let count = 0;
-
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
+let small = document.querySelectorAll('.smallPics');
+
 
 prev.addEventListener('click', function () {
     if (count == 0) {
-        count = slides.length - 1;
-        slideImage()
-    }
-    else {
+        count = sec.length - 1;
+        slideimage(count);
+    } else {
         count--;
-        slideImage()
+        slideimage(count);
     }
 })
 
 next.addEventListener('click', function () {
-    if (count == slides.length - 1) {
+    if (count == sec.length - 1) {
         count = 0;
-        slideImage();
-    }
-    else {  
+        slideimage(count);
+    } else {
         count++;
-        slideImage()
+        slideimage(count);
     }
+
+})
+
+sec.forEach((sections, index) => {
+    sections.style.left = `${index * 100}%`
 })
 
 
-slides.forEach((slide, index) => {
-    slide.style.left = `${index * 100}%`
-});
-
-let slideImage = () => {
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${count * 100}%)`
-    });
+let slideimage = (count) => {
+    sec.forEach((sections) => {
+        sections.style.transform = `translateX(-${count * 100}%)`
+    })
 }
+
+
+console.log(count);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let slideimage = () => {
+//     sec.forEach((sections) => {
+//         sections.style.transform = `translateX(-${count * 100}%)`
+//     })
+// }
+
+

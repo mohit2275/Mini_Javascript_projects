@@ -4,24 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Slider</title>
+    <title>Slideshow Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-    <main>
-        <img src="1.jpg" class="slide" id="photo">
-        <img src="2.jpg" class="slide" id="photo">
-        <img src="3.jpg" class="slide" id="photo">
-        <img src="4.jpg" class="slide" id="photo">
-        <img src="5.jpg" class="slide" id="photo">
-    </main>
+    <div class="container">
+        <h2>Please click on arrow buttons to slide and you can also select from the pictures below which you wish to
+            see.
+        </h2>
+        <div class="main">
 
-    <button id="prev">Previous</button>
-    <button id="next">Next</button>
+            <div class="sections">
+                <img src="1.jpg" class="image" id="img1">
+                <h3>Beautiful Black Beach</h3>
+            </div>
 
-    <script src="script.js">
-    </script>
+            <div class="sections">
+                <img src="2.jpg" class="image" id="img2">
+                <h3>Blue Beach</h3>
+            </div>
+
+            <div class="sections">
+                <img src="3.jpg" class="image" id="img3">
+                <h3>Waterfall</h3>
+            </div>
+
+            <div class="sections">
+                <img src="4.jpg" class="image" id="img4">
+                <h3>Smoky Mountains</h3>
+            </div>
+
+            <div class="sections">
+                <img src="5.jpg" class="image" id="img5">
+                <h3>Snowy Mountains</h3>
+            </div>
+
+            <div class="buttons">
+                <i class="fa-solid fa-chevron-left" id="prev"></i>
+                <i class="fa-solid fa-chevron-right" id="next"></i>
+            </div>
+
+        </div>
+        <div class="imgGroup">
+            <img src="1.jpg" class="smallPics" id="sp1" onclick="slideimage(0)">
+            <img src="2.jpg" class="smallPics" id="sp2" onclick="slideimage(1)">
+            <img src="3.jpg" class="smallPics" id="sp3" onclick="slideimage(2)">
+            <img src="4.jpg" class="smallPics" id="sp4" onclick="slideimage(3)">
+            <img src="5.jpg" class="smallPics" id="sp5" onclick="slideimage(4)">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

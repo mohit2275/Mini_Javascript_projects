@@ -2,10 +2,6 @@ const APIURL = "https://api.github.com/users/";
 let main = document.getElementById("main");
 let search = document.querySelector("#search");
 
-setTimeout(() => {
-
-}, 2000)
-
 let getUser = (username) => {
 
     fetch(APIURL + username)
@@ -37,7 +33,6 @@ let getUser = (username) => {
 
                     repos = document.getElementById('repos')
                     data.forEach(element => {
-                        // console.log(element);
                         repos.innerHTML += `
                         <a href="${element.html_url}" class="repo" target="_blank">${element.name}</a>
                         `
@@ -63,4 +58,4 @@ search.addEventListener(
     }
 )
 
-getUser('mohit2275');
+getUser("mohit2275");

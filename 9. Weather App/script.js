@@ -23,10 +23,22 @@ let getWeather = (city) => {
             }
 
             details.innerHTML = `
-            <img src= "https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="" id="pic">
-            <div class="text">
-                <h1>${data.main.temp}&degC</h1>
-                <h3>${data.weather[0].main}</h3>
+            <div class="temp1">
+<img src= "https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="" id="pic">
+                <div class="text">
+                    <h1>${data.main.temp}</h1>
+                    <h3>${data.weather[0].main}</h3>
+                </div>
+            </div>
+            <div class="temp2">
+                <h2>${data.name} </h2>
+                <hr>
+                <p>Wind Speed : ${data.wind.speed} and ${data.wind.speed} deg</p>
+                <div style="display: flex;justify-content: space-between;">
+                    <p> Visibility: ${data.visibility}</p>
+                    <p>Base : Stations</p>
+                </div>
+                <p>Coordinates are <br><strong>Lon : </strong> ${data.coord.lon} , <strong>Lat : </strong> ${data.coord.lat} </p>
             </div>
             `
         })
