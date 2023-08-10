@@ -24,7 +24,7 @@ let getWeather = (city) => {
 
             details.innerHTML = `
             <div class="temp1">
-<img src= "https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="" id="pic">
+            <img src= "https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="" id="pic">
                 <div class="text">
                     <h1>${data.main.temp}</h1>
                     <h3>${data.weather[0].main}</h3>
@@ -47,6 +47,5 @@ let getWeather = (city) => {
 let weather = () => {
     let city = search.value;
     getWeather(city);
-
     return false;
 }
