@@ -11,8 +11,10 @@ let numberInput = document.getElementById('numbers');
 let symbolInput = document.getElementById('symbols');
 
 
+
 let getRandomData = (dataSet) => {
     return dataSet[Math.floor(Math.random() * dataSet.length)]
+
 }
 
 let generatePassword = (password = '') => {
@@ -33,17 +35,11 @@ let generatePassword = (password = '') => {
         return generatePassword(password)
     }
 
-    passBox.innerText = password.substring(0, totalChar.value)
+    passBox.innerText = password;
 }
-
 
 generatePassword()
 
 
 
 
-
-
-let set = 'ABCDERFGHY'
-
-console.log(set[0]);
